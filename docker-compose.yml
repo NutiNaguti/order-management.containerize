@@ -1,29 +1,33 @@
-version: "3.9"
-services: 
+version: '3.1'
+
+services:
+
     mongo:
         image: mongo
         restart: always
-        environment: 
+        environment:
             MONGO_INITDB_ROOT_USERNAME: root
-            MONGO_INITDB_ROOT_PASSWOED: root
-        ports: 
-            - 27017:27017
+            MONGO_INITDB_ROOT_PASSWORD: example
 
     mongo-express:
         image: mongo-express
         restart: always
-        ports: 
+        ports:
             - 8081:8081
-        environment: 
+        environment:
             ME_CONFIG_MONGODB_ADMINUSERNAME: root
-            ME_CONFIG_MONGODB_ADMINPASSWORD: root
-        depends_on: 
-            - mongo
-    
+            ME_CONFIG_MONGODB_ADMINPASSWORD: example
+
     order-management.back:
-        image: order-management.back
+        image: order-management.back:1.0.3
         restart: always
         ports: 
             - 5000:5000
         depends_on: 
             - mongo
+
+    order-management.front:
+        image: order-management.front:0.1.0
+        restart: always
+        ports: 
+            - 80:80

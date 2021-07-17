@@ -25,5 +25,6 @@ on mac you can do
 
 8. Go to the root path
 9. Put here docker-compose.yml file from order-management.containerize
-10. Run 
+10. Run  
+
     docker-compose up -d

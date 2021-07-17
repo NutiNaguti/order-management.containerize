@@ -9,7 +9,7 @@ For building docker image follow the steps:
 on mac you can do  
   brew install docker
 
-1. Get allication source files and docker files
+1. Get allication source files and docker files  
     git pull https://github.com/NutiNaguti/order-management.git  
     git pull https://github.com/NutiNaguti/order-management.front.git  
     git pull https://github.com/NutiNaguti/order-management.containerize.git  

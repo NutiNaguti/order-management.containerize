@@ -5,7 +5,7 @@ Just a test task.
 # BUILDING APPLICATION
 For building docker image follow the steps:
 
-0. Download and install docker 
+0. Download and install docker   
 on mac you can do  
   brew install docker
 

@@ -11,9 +11,9 @@ on mac you can do
 
 1. Get allication source files and docker files
   
-    git pull https://github.com/NutiNaguti/order-management.git
-    git pull https://github.com/NutiNaguti/order-management.front.git
-    git pull https://github.com/NutiNaguti/order-management.containerize.git
+    git pull https://github.com/NutiNaguti/order-management.git  
+    git pull https://github.com/NutiNaguti/order-management.front.git  
+    git pull https://github.com/NutiNaguti/order-management.containerize.git  
 
 2. Go to the folder with source code of backed application
 3. Put here Dockerfile from order-management.containerize/backend folder
@@ -25,4 +25,5 @@ on mac you can do
 
 8. Go to the root path
 9. Put here docker-compose.yml file from order-management.containerize
-10. Run >docker-compose up -d
+10. Run 
+    docker-compose up -d

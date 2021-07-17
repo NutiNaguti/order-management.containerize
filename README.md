@@ -7,7 +7,7 @@ For building docker image follow the steps:
 
 0. Download and install docker   
 on mac you can do  
-  brew install docker
+    brew install docker
 
 1. Get allication source files and docker files  
     git pull https://github.com/NutiNaguti/order-management.git  

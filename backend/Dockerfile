@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY /order-management/src/. .
+COPY /src/. .
 RUN dotnet restore order-management/*.csproj
 WORKDIR /src/order-management
 RUN dotnet build order-management.csproj -c Release -o /app

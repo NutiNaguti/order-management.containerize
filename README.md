@@ -10,9 +10,9 @@ on mac you can do
     brew install docker
 
 1. Get application source files and docker files  
-    git pull https://github.com/NutiNaguti/order-management.git  
-    git pull https://github.com/NutiNaguti/order-management.front.git  
-    git pull https://github.com/NutiNaguti/order-management.containerize.git  
+    git clone https://github.com/NutiNaguti/order-management.git  
+    git clone https://github.com/NutiNaguti/order-management.front.git  
+    git clone https://github.com/NutiNaguti/order-management.containerize.git  
 2. Go to the folder with source code of backed application
 3. Put here **Dockerfile** from order-management.containerize/backend folder
 4. Build docker image
